@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubernetes-101
+  labels:
+    app: kubernetes-101
+spec:
+  selector:
+    app: kubernetes-101
+  type: NodePort
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: http

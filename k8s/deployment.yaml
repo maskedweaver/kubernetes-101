@@ -20,4 +20,5 @@ spec:
         - name: kubernetes-101
           image: kubernetes-101:v1
           ports:
-            - containerPort: 3000
+            - name: http
+              containerPort: 3000
